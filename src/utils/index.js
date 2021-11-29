@@ -1,15 +1,15 @@
-const movieArr = [];
+// const movieArr = [];
 const gameArr = [];
 
-class Movie {
-  constructor(title, actor) {
-    this.title = title;
-    this.actor = actor;
-  }
-  add() {
-    movieArr.push(this);
-  }
-}
+// class Movie {
+//   constructor(title, actor) {
+//     this.title = title;
+//     this.actor = actor;
+//   }
+//   add() {
+//     movieArr.push(this);
+//   }
+// }
 
 class Game {
   constructor(title, platform, genre) {
@@ -17,10 +17,14 @@ class Game {
     this.platform = platform;
     this.genre = genre;
   }
-  add() {}
+  add() {
+    gameArr.push(this);
+  }
 }
 
 module.exports = {
-  Movie,
-  movieArr,
+  //   Movie,
+  //   movieArr,
+  Game,
+  gameArr,
 };
