@@ -1,4 +1,5 @@
 const movieArr = [];
+const gameArr = [];
 
 class Movie {
   constructor(title, actor) {
@@ -8,6 +9,15 @@ class Movie {
   add() {
     movieArr.push(this);
   }
+}
+
+class Game {
+  constructor(title, platform, genre) {
+    this.title = title;
+    this.platform = platform;
+    this.genre = genre;
+  }
+  add() {}
 }
 
 module.exports = {
